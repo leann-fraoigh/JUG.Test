@@ -1,0 +1,35 @@
+// Viewports
+$width-desktop-max: 1620px;
+$width-desktop: 1024px;
+$width-tablet: 768px;
+$width-mobile: 320px;
+
+// Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Fonts
+$montserrat: "Montserrat", 'Arial', sans-serif;
+
+// Colors
+$color-transparent:                      rgba(255, 255, 255, 0);
+$color-default-white:                    #ffffff;
+$color-default-black:                    #000000;
+$color-white-smoke:                      #f8f8f8;
+$color-tangerine-yellow:                 #fbcb03;
+$color-golden-poppy:                     #e6b901;
+$color-mahogany:                         #d93740;
+
+// With transparency
+$color-default-black-semitransparent-16: rgba($color-default-black, 0.16);
+$color-default-black-semitransparent-8: rgba($color-default-black, 0.8);
+$color-default-black-semitransparent-1: rgba($color-default-black, 0.1);
+$color-default-black-semitransparent-32: rgba($color-default-black, 0.32);
+$color-default-white-semitransparent-32: rgba($color-default-white, 0.32);
+
+// Gradients
+// $bg-stripes: repeating-linear-gradient(0deg, $color-default-black 0, $color-default-black 86px, $color-default-white 86px, $color-default-white 162px);
+$bg-stripes: repeating-linear-gradient(0deg, $color-default-black 0, $color-default-black 5%, $color-default-white 5%, $color-default-white 10%);
+
+// Transitions
+$transition: 0.3s ease;

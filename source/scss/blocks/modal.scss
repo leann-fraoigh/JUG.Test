@@ -1,0 +1,95 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  background-color: $color-default-white;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity $transition,
+    visibility $transition;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &__content {
+    padding: 87px 56px;
+
+    @include tablet {
+      padding: 60px;
+    }
+
+    @include mobile {
+      padding: 20px;
+    }
+  }
+
+  &__back {
+    display: inline-block;
+    position: relative;
+    margin-top: 72px;
+    margin-left: -2px;
+
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    text-decoration: none;
+
+    transition: opacity $transition;
+
+    @include tablet {
+      align-self: center;
+      margin-top: 56px;
+      margin-left: -8px;
+
+      font-size: 20px;
+    }
+
+    @include mobile {
+      margin-top: 36px;
+      margin-left: -2px;
+
+      font-size: 14px;
+
+      .modal--decline-first & {
+        position: relative;
+        top: -32px;
+      }
+    }
+
+    svg {
+      margin-right: 10px;
+      margin-bottom: -12px;
+      fill: $color-transparent;
+
+      @include mobile {
+        width: 12px;
+        height: 20px;
+        margin-bottom: -5px;
+        margin-right: 8px;
+      }
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.32;
+      }
+    }
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JUG.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/montserrat-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header class="header"></header>
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__logo">
+          <img src="img/content/logo@1x.png" srcset="img/content/logo@2x.png 2x" width="126" height="41" alt="Логотип JUG.ru">
+        </div>
+        <h1 class="hero__title">Конференции, которые нужны</h1>
+        <p class="hero__text">Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.</p>
+        <p class="hero__text">С нас — крутая программа, топовые спикеры, технические доклады без воды.</p>
+        <p class="hero__text">С вас — готовность смотреть и общаться.</p>
+        <div class="hero__cta">
+          <button type="button" class="hero__cta-btn btn btn--gold btn--icon-yes btn--icon js-open-modal">Купить билет</button>
+          <button type="button" class="hero__cta-btn btn btn--black btn--icon-no btn--icon js-open-modal js-open-modal--decline">Послать в жопу </button>
+        </div>
+      </div>
+      <div class="hero__img">
+        <div class="hero__stripes"></div>
+        <img src="img/content/hero-img@1x.png" srcset="img/content/hero-img@2x.png 2x" width="714" height="611" alt="Логотипы конференций Joker, HolyJS, DevOps, Mobius, Heisenbug, C++ Russia, DotNext">
+      </div>
+
+    </section>
+  </main>
+  <footer></footer>
+  <section class="modal js-modal">
+    <div class="modal__content container">
+      <div class="form">
+        <form action="#" method="POST">
+          <div class="form__fieldset form__fieldset--10" role="group">
+            <legend class="form__legend">Я хочу знать, когда будет офлайн</legend>
+            <div class="form__subscription">
+              <div class="custom-input">
+                <label class="custom-input__label">
+                  <input type="email" placeholder="Укажите email">
+                </label>
+                <span class="custom-input__error">Неверный формат адреса</span>
+              </div>
+              <button type="button" class="btn btn--sm btn--bordered js-accept-btn">Подписаться</button>
+            </div>
+
+            <p class="form__agreement">Нажимая на кнопку вы соглашаетесь на&nbsp;обработку <a href="#" class="form__agreement-link">персональных данных</a></p>
+          </div>
+
+          <div class="form__fieldset form__fieldset--11">
+            <legend class="form__legend">Я хочу знать, когда будет офлайн</legend>
+            <p class="form__thanks-for-subscription">
+              <svg width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-tick"></use>
+              </svg>
+              Спасибо, что подписались на нашу рассылку!</p>
+          </div>
+
+
+          <div class="form__fieldset form__fieldset--20 form__fieldset--inverted" role="group">
+            <legend class="form__legend">Идите в жопу!</legend>
+            <ul class="form__option-list">
+              <li class="form__option-item">
+                <button type="button" data-reason="price" class="js-decline-btn form__option btn btn--sm btn--ghost btn--pill">Вы свои цены видели?</button>
+              </li>
+              <li class="form__option-item">
+                <button type="button" data-reason="content" class="js-decline-btn form__option btn btn--sm btn--ghost btn--pill">Доклады ни о чем</button>
+              </li>
+              <li class="form__option-item">
+                <button type="button" data-reason="random" class="js-decline-btn form__option btn btn--sm btn--ghost btn--pill">У вас там всё хорошо?</button>
+              </li>
+              <li class="form__option-item">
+                <button type="button" data-reason="money" class="js-decline-btn form__option btn btn--sm btn--ghost btn--pill">Денег нет, но вы держитесь</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form__fieldset form__fieldset--inverted form__fieldset--21">
+            <p class="form__thanks-for-feedback">Спасибо, что поделились!</p>
+          </div>
+        </form>
+        <a href="#" class="modal__back js-close-modal">
+          <svg width="24" height="42">
+            <use xlink:href="img/sprite.svg#icon-back"></use>
+          </svg>
+          Я кликнул просто посмотреть</a>
+      </div>
+    </div>
+  </section>
+
+  <!--<script src="js/vendor.min.js"></script>-->
+  <script src="js/script.js"></script>
+</body>
+</html>

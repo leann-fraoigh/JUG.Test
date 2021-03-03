@@ -1,0 +1,170 @@
+.btn {
+  @include button-reset;
+  padding: 22px;
+  box-sizing: border-box;
+
+  color: inherit;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background-clip: border-box;
+  background-color: $color-default-white;
+
+  transition: border-color $transition, background-color $transition, color $transition;
+
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-white-smoke;
+    }
+  }
+
+  &:active {
+    background-color: $color-white-smoke;
+  }
+
+  @include tablet {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  @include mobile {
+    padding: 14px;
+    font-size: 11px;
+
+    border-radius: 7px;
+  }
+
+  &--sm {
+    padding: 16px;
+
+    @include mobile {
+      padding: 10px;
+
+      font-size: 12px;
+    }
+  }
+
+  &--pill {
+    border-radius: 500px;
+  }
+
+  &--bordered {
+    border-color: $color-default-black-semitransparent-16;
+    background-clip: padding-box;
+  }
+
+  &--ghost {
+    color: $color-default-white;
+    background-color: transparent;
+    border-color: $color-default-white;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        color: $color-default-black;
+        background-color: $color-default-white;
+        border-color: transparent;
+      }
+    }
+
+    &:active {
+      color: $color-default-black;
+      background-color: $color-default-white;
+      border-color: transparent;
+    }
+  }
+
+  &--black {
+    color: $color-default-white;
+    background-color: $color-default-black;
+    border-color: $color-transparent;
+
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        background-color: $color-default-black-semitransparent-8;
+      }
+    }
+
+    &:active {
+      background-color: $color-default-black-semitransparent-8;
+    }
+  }
+
+  &--gold {
+    background-color: $color-tangerine-yellow;
+    border-color: $color-transparent;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        background-color: $color-golden-poppy;
+      }
+    }
+
+    &:active {
+      background-color: $color-golden-poppy;
+    }
+  }
+
+  &--icon {
+    position: relative;
+    margin-top: 52px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-top: -1px;
+
+      background-size: contain;
+
+      transform: translate(-50%, -100%);
+      pointer-events: none;
+    }
+
+    @include mobile {
+      margin-top: 35px;
+    }
+
+  }
+
+  &--icon-yes {
+    &::before {
+      width: 52px;
+      height: 52px;
+
+      background-image: url("../img/bg/icon-hi@1x.png");
+
+      @include retina {
+        background-image: url("../img/bg/icon-hi@2x.png");
+      }
+
+      @include mobile {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  &--icon-no {
+    &::before {
+      width: 44px;
+      height: 44px;
+
+      background-image: url("../img/bg/icon-facepalm@1x.png");
+
+      @include retina {
+        background-image: url("../img/bg/icon-facepalm@2x.png");
+      }
+
+      @include mobile {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}
