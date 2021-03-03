@@ -822,7 +822,7 @@ textarea:invalid {
   .form form {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "agree" "refuse";
+    grid-template-areas: "refuse" "agree";
     grid-gap: 44px 0;
   }
 }

@@ -8,29 +8,21 @@
     return;
   }
 
-  function openModal(evt, btn) {
+  function openModal() {
     modal.classList.add(`modal--active`);
     window.disableBodyScroll(modal);
-
-    if (btn.classList.contains(`js-open-modal--decline`)) {
-      modal.classList.add(`modal--decline-first`);
-    }
   }
 
   function closeModal() {
     window.enableBodyScroll(modal);
     modal.classList.remove(`modal--active`);
-
-    setTimeout(() => {
-      modal.classList.remove(`modal--decline-first`);
-    }, 300);
   }
 
   function addOpenBtnsEventListener() {
     openBtns.forEach((btn) => {
       btn.addEventListener(`click`, function (evt) {
         evt.preventDefault();
-        openModal(evt, btn);
+        openModal();
       });
     });
   }
