@@ -38,8 +38,9 @@
     <div class="modal__content container">
       <div class="form">
         <form action="#" method="POST">
-          <div class="form__fieldset form__fieldset--10" role="group">
-            <legend class="form__legend">Я хочу знать, когда будет офлайн</legend>
+          <h2 class="form__title visually-hidden">Форма обратной связи</h2>
+          <div class="form__fieldset form__fieldset--10" role="group" aria-labelledby="offline">
+            <div class="form__legend" id="offline">Я хочу знать, когда будет офлайн</div>
             <div class="form__subscription">
               <div class="custom-input">
                 <label class="custom-input__label">
@@ -54,7 +55,7 @@
           </div>
 
           <div class="form__fieldset form__fieldset--11">
-            <legend class="form__legend">Я хочу знать, когда будет офлайн</legend>
+            <div class="form__legend">Я хочу знать, когда будет офлайн</div>
             <p class="form__thanks-for-subscription">
               <svg width="40" height="40">
                 <use xlink:href="img/sprite.svg#icon-tick"></use>
@@ -63,8 +64,8 @@
           </div>
 
 
-          <div class="form__fieldset form__fieldset--20 form__fieldset--inverted" role="group">
-            <legend class="form__legend">Идите в жопу!</legend>
+          <div class="form__fieldset form__fieldset--20 form__fieldset--inverted" role="group" aria-labelledby="decline">
+            <div class="form__legend" id="decline">Идите в жопу!</div>
             <ul class="form__option-list">
               <li class="form__option-item">
                 <button type="button" data-reason="price" class="js-decline-btn form__option btn btn--sm btn--ghost btn--pill">Вы свои цены видели?</button>
