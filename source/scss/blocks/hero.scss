@@ -8,6 +8,8 @@
   margin-right: auto;
   margin-left: auto;
 
+  overflow: hidden;
+
   @include tablet {
     min-height: auto;
   }

@@ -1177,6 +1177,7 @@ textarea:invalid {
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 @media (max-width: 1023px) {
